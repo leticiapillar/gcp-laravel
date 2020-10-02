@@ -28,7 +28,7 @@ steps:
   name: 'docker'
   args: ['exec', '-t', 'app', 'php', '/var/www/artisan', 'migrate']
 
-- id: "Rodando teste unitário do phpunit"
+- id: "Rodando teste unitário do PHPUnit"
   name: 'docker'
   args: ['exec', '-t', 'app', 'php', '/var/www/vendor/bin/phpunit', '-c', '/var/www/phpunit.xml']
 
