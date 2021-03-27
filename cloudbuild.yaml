@@ -12,13 +12,13 @@ steps:
   name: 'docker'
   args: ['ps']
 
-- id: "Rodando composer install"
-  name: 'docker'
-  args: ['exec', '-t', 'app', 'composer', 'install']
-
 - id: "Copiando .env"
   name: 'docker'
   args: ['exec', '-t', 'app', 'cp', '.env.example', '.env']
+
+- id: "Rodando composer install"
+  name: 'docker'
+  args: ['exec', '-t', 'app', 'composer', 'install']
 
 - id: "Rodando key:generate"
   name: 'docker'
