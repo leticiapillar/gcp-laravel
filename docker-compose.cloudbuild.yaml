@@ -53,7 +53,7 @@ services:
     restart: always
     tty: true
     ports:
-      - "3306:3306"
+      - "33060:3306"
     environment:
       - MYSQL_DATABASE=laravel
       - MYSQL_ROOT_PASSWORD=root
