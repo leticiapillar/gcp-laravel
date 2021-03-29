@@ -57,7 +57,7 @@ services:
     environment:
       - MYSQL_DATABASE=laravel
       - MYSQL_ROOT_PASSWORD=root
-      - MYSQL_USER=root
+      # - MYSQL_USER=root
     # volumes:
     #   - ./.docker/mysql/dbdata:/var/lib/mysql
     networks:
